@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Elegant Skirt",
+        "price": 300,
+        "image": "./images/pr8.jpg",
+        "description": "A stylish skirt perfect for any occasion.",
+        "category": "Blouse"
+    },
+    {
+        "id": 2,
+        "name": "Casual Blouse",
+        "price": 500,
+        "image": "./images/pr1.jpg",
+        "description": "A comfortable and casual blouse for everyday wear.",
+        "category": "Blouse"
+    },
+    {
+        "id": 3,
+        "name": "Floral hills",
+        "price": 390,
+        "image": "./images/hill1.webp",
+        "description": "A beautiful hills for any occasion.",
+        "category": "Skirt"
+    },
+    {
+        "id": 4,
+        "name": "Party Dress",
+        "price": 570,
+        "image":"images/dress 3.jpg",
+        "description": "A beautiful dress for parties and events.",
+        "category": "Dress"
+    },
+    {
+        "id": 5,
+        "name": "prrety shoes",
+        "price": 1000,
+        "image": "./images/gsho2.jpg",
+        "description": "A light and breezy shoes.",
+        "category": "Dress"
+    },
+    {
+        "id": 6,
+        "name": "Fashion glasess",
+        "price": 260,
+        "image": "./images/glass2g.jpg",
+        "description": "A comfortable dress for everyday wear.",
+        "category": "Dress"
+    },
+    {
+        "id": 7,
+        "name": "Elegant bag",
+        "price": 300,
+        "image": "./images/bag3.jpg",
+        "description": "An elegant skirt for formal occasions.",
+        "category": "Skirt"
+    },
+    {
+        "id": 8,
+        "name": "Boho Blouse",
+        "price": 900,
+        "image": "./images/b.jpg",
+        "description": "A bohemian style blouse for a relaxed look.",
+        "category": "Blouse"
+    },
+    {
+        "id": 9,
+        "name": "Chic Blouse",
+        "price": 668,
+        "image": "images/bloth1.jpg",
+        "description": "A chic blouse for a sophisticated look.",
+        "category": "Blouse"
+    },
+    {
+        "id": 10,
+        "name": "Fashion bag",
+        "price": 400,
+        "image": "./images/bag2.jfif",
+        "description": "A flowing maxi dress for a stunning look.",
+        "category": "Dress"
+    },
+    {
+        "id": 11,
+        "name": "Summer Skirt",
+        "price": 500,
+        "image": "./images/skirt.jpg",
+        "description": "A light summer skirt for a cool look.",
+        "category": "Skirt"
+    },
+    {
+        "id": 12,
+        "name": "Maxi Dress",
+        "price": 450,
+        "image": "./images/pr3.jpg",
+        "description": "A flowing maxi dress for a stunning look.",
+        "category": "Dress"
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Elegant Shoes",
+        "price": 300,
+        "image": "./images/shom2.jpg",
+        "description": "A stylish blouse perfect for any occasion.",
+        "category": "Blouse"
+    },
+    {
+        "id": 2,
+        "name": "sports shoes",
+        "price": 500,
+        "image": "./images/sho3.jfif",
+        "description": "A comfortable and casual blouse for everyday wear.",
+        "category": "Blouse"
+    },
+    {
+        "id": 3,
+        "name": "Floral shoes",
+        "price": 390,
+        "image": "./images/shom4.jfif",
+        "description": "A beautiful floral skirt perfect for summer.",
+        "category": "Skirt"
+    },
+    {
+        "id": 4,
+        "name": "Party uniform",
+        "price": 570,
+        "image":"images/man2.jpg",
+        "description": "A beautiful dress for parties and events.",
+        "category": "Dress"
+    },
+    {
+        "id": 5,
+        "name": "Casual uniform",
+        "price": 1000,
+        "image": "./images/men3.jpg",
+        "description": "A light and breezy summer dress.",
+        "category": "Dress"
+    },
+    {
+        "id": 6,
+        "name": "Casual outfit",
+        "price": 260,
+        "image": "./images/men4.jpg",
+        "description": "A comfortable dress for everyday wear.",
+        "category": "Dress"
+    },
+    {
+        "id": 7,
+        "name": "sports shoes",
+        "price": 300,
+        "image": "./images/mensho1.jpg",
+        "description": "An elegant skirt for formal occasions.",
+        "category": "Skirt"
+    },
+    {
+        "id": 8,
+        "name": "Chic glasses",
+        "price": 900,
+        "image": "./images/mg1.webp",
+        "description": "A bohemian style blouse for a relaxed look.",
+        "category": "Blouse"
+    },
+    {
+        "id": 9,
+        "name": "Elegant outfits",
+        "price": 668,
+        "image": "images/men5.jpg",
+        "description": "A chic blouse for a sophisticated look.",
+        "category": "Blouse"
+    },
+    {
+        "id": 10,
+        "name": "Party shoes",
+        "price": 400,
+        "image": "./images/sho2.jfif",
+        "description": "A flowing maxi dress for a stunning look.",
+        "category": "Dress"
+    },
+    {
+        "id": 11,
+        "name": " Elegant outfit",
+        "price": 500,
+        "image": "./images/images.jfif",
+        "description": "A light summer skirt for a cool look.",
+        "category": "Skirt"
+    },
+    {
+        "id": 12,
+        "name": "Elegant Shoes",
+        "price": 450,
+        "image": "./images/man3.jfif",
+        "description": "A flowing maxi dress for a stunning look.",
+        "category": "Dress"
+    }
+]

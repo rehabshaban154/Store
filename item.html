@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details</title>
+
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/fram.css">
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="" alt="Item Image" class="img-fluid" style="border-radius: 10px;width: 400px; height: 500px;">
+            </div>
+            <div class="col-md-6">
+                <h1 class="card-title" class="my-3" style="font-family: cursive; color: teal;">Blouse</h1>
+                <p class="description" class="my-3" style="font-size: 1rem;">This is a beautiful blouse perfect for any occasion. Made from high-quality materials for a comfortable fit.</p>
+                <p class="price" class="my-3" style="font-size: 1.5rem; color: gray;">$39.99</p>
+                <div class="rate">
+                    <i class="fas fa-star" style="color: #FFD43B;"></i>
+                    <i class="fas fa-star" style="color: #FFD43B;"></i>
+                    <i class="fas fa-star" style="color: #FFD43B;"></i>
+                    <i class="fas fa-star" style="color: #FFD43B;"></i>
+                    <i class="far fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="my-3" style="font-size: 1rem;">
+                    <label for="quantity" style="font-weight: bold; font-family: cursive;">Number:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1" class="form-control" style="width: 80px; display: inline-block; margin-left: 10px;">
+                </div>
+                <a href="#" class="btn btn-success my-3 add-to-cart" data-toggle="modal" data-target="#addToCartModal">Add to Cart</a>
+                <a href="./index.html#card" class="btn btn-primary my-3">Home</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addToCartModalLabel" style="font-family: cursive;color: teal;">Added Correctly</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    The item has been added to your cart.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <a class="btn btn-primary" href="./cart.html">View Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const products = document.querySelectorAll('.grid-item');
+
+            products.forEach(product => {
+                product.addEventListener('click', function () {
+                    const imgSrc = this.querySelector('img').src;
+                    const title = this.querySelector('.card-title').textContent;
+                    const disc = this.querySelector('.description').textContent;
+                    const price = this.querySelector('.price').textContent;
+                  
+
+                    localStorage.setItem('productImgSrc', imgSrc);
+                    localStorage.setItem('productTitle', title);
+                    localStorage.setItem('discription', disc);
+                    localStorage.setItem('productPrice', price);
+                 
+
+                    window.location.href = 'item.html';
+                });
+            });
+
+            if (window.location.pathname.includes('item.html')) {
+                const imgSrc = localStorage.getItem('productImgSrc');
+                const title = localStorage.getItem('productTitle');
+                const disc = localStorage.getItem('discription');
+                const price = localStorage.getItem('productPrice');
+
+                document.getElementById('product-image').src = imgSrc;
+                document.getElementById('card-title').textContent = title;
+                document.getElementsByClassName('description').textContent = category;
+                document.getElementsByClassName('price').textContent = price;
+
+
+                // Add event listener to the "Add to Cart" button on the details page
+                const addToCartButton = document.getElementById('details-add-to-cart');
+                addToCartButton.addEventListener('click', function () {
+                    const quantity = document.getElementById('quantity').value;
+
+                    // Example of what you might do with this information
+                    const cartItem = {
+                        imgSrc,
+                        title,
+                        category,
+                        oldPrice,
+                        price,
+                        rating,
+                        quantity
+                    };
+
+                    // Add item to the cart (you could store this in localStorage or send to a backend)
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    cart.push(cartItem);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+
+                    // Show success modal
+                    $('#successModal').modal('show');
+                });
+            }
+        });
+
+  // Function to add product to cart
+  function addToCart(event) {
+    event.preventDefault();
+    
+    // Get product details from the clicked card
+    const card = event.target.closest('.card');
+    const productName = card.querySelector('.card-title').textContent;
+    const productDescription = card.querySelector('.description').textContent;
+    const productPrice = card.querySelector('.card-price').textContent;
+    const productImage = card.querySelector('img').src;
+    
+    // Create a product object
+    const product = {
+      name: productName,
+      description: productDescription,
+      price: productPrice,
+      image: productImage
+    };
+
+    // Get the cart from local storage or create a new one
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+    // Add the new product to the cart
+    cart.push(product);
+    
+    // Save the updated cart to local storage
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // Display a success message or update cart count (optional)
+    alert('Product added to cart!');
+  }
+
+  // Attach the addToCart function to all Add to Cart buttons after DOM content is loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+      button.addEventListener('click', addToCart);
+    });
+  });
+
+
+
+
+
+
+    </script>
+
+
+    <script src="./index.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

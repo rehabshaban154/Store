@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- styling -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/fram.css">
+    <link rel="stylesheet" href="./css/master.css">
+
+
+
+    <link rel="website icon" type="png" href="./images/online-shopping.jpg">
+    <title>Store</title>
+</head>
+<body>
+    <div class="products position-relative" style="margin-top: 70px;">
+        <div class="container">
+            <header>
+                <div class="title heading" style="font-family: cursive;">PRODUCT LIST</div>
+                <div class="icon-cart">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                    </svg>
+                    <span>0</span>
+                </div>
+                <a href="./check.html" style="    display: block;
+                position: absolute;
+                color: white;
+                background-color: teal;
+                padding: 10px;
+                transition: 0.5s;
+                border: none;
+                border-radius: 10px;" id="check">Check Out</a>
+            </header>
+            <div class="listProduct"></div>
+        </div>
+        <div class="cartTab">
+            <h1 class="">Mals Products</h1>
+            <div class="listCart"></div>
+            <div class="btn">
+                <button class="close">CLOSE</button>
+                <button id="clearCart" onclick="clear()">Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal HTML -->
+    <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true" style=" margin-top: 100px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addToCartModalLabel" style="font-family: cursive; color: teal;">Added Correctly</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;
+                    right: 29px;
+                    background: none;
+                    border: beige;
+                    font-size: 25px;">
+                        <span aria-hidden="true" >&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    The product has been added to your cart.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include jQuery before Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="./child.js"></script>
+</body>
+</html>

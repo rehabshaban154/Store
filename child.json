@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Elegant Dress",
+        "price": 300,
+        "image": "./images/child1.webp",
+        "description": "A stylish blouse perfect for any occasion.",
+        "category": "Blouse"
+    },
+    {
+        "id": 2,
+        "name": "Fashion Dress",
+        "price": 500,
+        "image": "./images/child2.webp",
+        "description": "A comfortable and casual blouse for everyday wear.",
+        "category": "Blouse"
+    },
+    {
+        "id": 3,
+        "name": "Floral blouse",
+        "price": 390,
+        "image": "./images/child3.jfif",
+        "description": "A beautiful floral skirt perfect for summer.",
+        "category": "Skirt"
+    },
+    {
+        "id": 4,
+        "name": "Pretty Dress",
+        "price": 570,
+        "image":"images/child4.jfif",
+        "description": "A beautiful dress for parties and events.",
+        "category": "Dress"
+    },
+    {
+        "id": 5,
+        "name": "Fashion glasess",
+        "price": 1000,
+        "image": "./images/glch1.jpg",
+        "description": "A light and breezy summer dress.",
+        "category": "Dress"
+    },
+    {
+        "id": 6,
+        "name": "Fashion T-shirt",
+        "price": 260,
+        "image": "./images/child5.jfif",
+        "description": "A comfortable dress for everyday wear.",
+        "category": "Dress"
+    },
+    {
+        "id": 7,
+        "name": "Summer t-shirt",
+        "price": 300,
+        "image": "./images/child7.jfif",
+        "description": "An elegant skirt for formal occasions.",
+        "category": "Skirt"
+    },
+    {
+        "id": 8,
+        "name": "fashion",
+        "price": 900,
+        "image": "./images/child8.jpg",
+        "description": "A bohemian style blouse for a relaxed look.",
+        "category": "Blouse"
+    },
+    {
+        "id": 9,
+        "name": "Chic Blouse",
+        "price": 668,
+        "image": "./images/child9.jpg",
+        "description": "A chic blouse for a sophisticated look.",
+        "category": "Blouse"
+    },
+    {
+        "id": 10,
+        "name": "Maxi blouse",
+        "price": 400,
+        "image": "./images/child12.webp",
+        "description": "A flowing maxi dress for a stunning look.",
+        "category": "Dress"
+    },
+    {
+        "id": 11,
+        "name": "Summer form",
+        "price": 500,
+        "image": "./images/child10.webp",
+        "description": "A light summer skirt for a cool look.",
+        "category": "Skirt"
+    },
+    {
+        "id": 12,
+        "name": "Maxi Dress",
+        "price": 450,
+        "image": "./images/child13.webp",
+        "description": "A flowing maxi dress for a stunning look.",
+        "category": "Dress"
+    }
+]
